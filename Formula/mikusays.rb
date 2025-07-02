@@ -25,7 +25,15 @@ class Mikusays < Formula
   end
 
   def install
-    bin.install File.basename(url) => "mikusays"
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "mikusays-macos-arm64" => "mikusays"
+    elsif OS.mac? && Hardware::CPU.intel?
+      bin.install "mikusays-macos-x64" => "mikusays"
+    elsif OS.linux? && Hardware::CPU.arm?
+      bin.install "mikusays-linux-arm64" => "mikusays"
+    elsif OS.linux? && Hardware::CPU.intel?
+      bin.install "mikusays-linux-x64" => "mikusays"
+    end
   end
 
   test do
