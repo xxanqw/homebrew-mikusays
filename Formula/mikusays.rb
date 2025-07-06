@@ -6,21 +6,21 @@ class Mikusays < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.0/mikusays-macos-arm64"
-      sha256 "809d2df3c0d611a094756987f9531f24dff0fbef780fd51bffd93c7a0bc36bd2"
+      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.1/mikusays-macos-arm64"
+      sha256 "882c758141b5b9062518a2ebedbc179ddf85457556cf2e3c8763dfcdc4b48d4e"
     elsif Hardware::CPU.intel?
-      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.0/mikusays-macos-x64"
-      sha256 "a195c32c6b39021ed99dd4a9c52b9ee315c2697ddc6647e33950c729da72357b"
+      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.1/mikusays-macos-x64"
+      sha256 "19a5a9e2348a16a1801e41b084d4520a8ad509b15a2803d8550aaf7a595711cc"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.0/mikusays-linux-arm64"
-      sha256 "c9e23976e81b106c95e1b9e16911178374fd6e32997f4b7d4244ac95feccde85"
+      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.1/mikusays-linux-arm64"
+      sha256 "6417bca50ef4f4ed61f5233670274916cf77e866ff83c235dc64626001a40869"
     elsif Hardware::CPU.intel?
-      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.0/mikusays-linux-x64"
-      sha256 "a6c5a4a94084e3375f0a556f38d07b82a86d18fc8c706b89387db6658169d720"
+      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.1/mikusays-linux-x64"
+      sha256 "a9b409e1d14256417e2db12c6cbc61b20d62afd37d6d3e2708a02aa3c1a06bd0"
     end
   end
 
