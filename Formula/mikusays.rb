@@ -1,7 +1,7 @@
 class Mikusays < Formula
   desc "Like cowsay but with Hatsune Miku"
   homepage "https://github.com/xxanqw/mikusays"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
