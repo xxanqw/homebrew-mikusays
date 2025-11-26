@@ -1,26 +1,26 @@
 class Mikusays < Formula
   desc "Like cowsay but with Hatsune Miku"
   homepage "https://github.com/xxanqw/mikusays"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.3/mikusays-macos-arm64"
-      sha256 "fb2d0d6d3c9fb5965f0fcea5a21ca65fab8fd823b833ca477a853a11afd002f5"
+      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.4/mikusays-macos-arm64-0.1.4"
+      sha256 "feeaf1aa7594537db5d4d2c67c57994620bbd8aa93d76d9fbb9b0409c0e96c67"
     elsif Hardware::CPU.intel?
-      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.3/mikusays-macos-x64"
-      sha256 "2deba5732f173c3bd22d5ad632cf32ec61889002c49661320b0dc7517281db33"
+      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.3/mikusays-macos-x64-0.1.4"
+      sha256 "42f02fe70de423ddef788fb8c6e06ddb622b33e9ef5de3e36184ed20bd3f4333"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.3/mikusays-linux-arm64"
-      sha256 "06d5f9012d6b4c9b011f148724a15affb71e5fd4a71eff908a35fa832f674e0b"
+      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.3/mikusays-linux-arm64-0.1.4"
+      sha256 "38da31364e88a6554b1210d043fb00463d09ab37eb75612f0cdfb0f48b2aea28"
     elsif Hardware::CPU.intel?
-      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.3/mikusays-linux-x64"
-      sha256 "52a38f4ca13e90bf93b2dd90502a4c04cd8c903ed4fb9200e1f15d1d009f05d9"
+      url "https://github.com/xxanqw/mikusays/releases/download/v0.1.3/mikusays-linux-x64-0.1.4"
+      sha256 "12e0670de5a316d17562008a079cb036d7ecc17d34588b47533aceae409860b7"
     end
   end
 
